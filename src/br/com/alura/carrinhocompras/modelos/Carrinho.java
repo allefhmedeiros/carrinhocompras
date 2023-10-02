@@ -25,7 +25,7 @@ public class Carrinho {
         System.out.println("-----------------------------------------------------------------");
         System.out.println(String.format("Meu Carrinho - Valor Total de Compra R$ %.2f", this.valorTotal));
         System.out.println("\nResumo de Compra:\n");
-        //Collections.sort(listaProdutos);
+        Collections.sort(listaProdutos);
         for (Produto produto : listaProdutos) {
             System.out.println(produto.resumeItem());
         }

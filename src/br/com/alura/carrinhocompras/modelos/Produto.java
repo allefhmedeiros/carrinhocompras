@@ -2,7 +2,7 @@ package br.com.alura.carrinhocompras.modelos;
 
 import java.util.Comparator;
 
-public class Produto {
+public class Produto implements Comparable<Produto>{
     private String nomeProduto;
     private double precoProduto;
     private double valorTotal;
@@ -34,7 +34,7 @@ public class Produto {
                 """, this.nomeProduto, this.quantidadeProduto, this.precoProduto, this.valorTotal));
     }
 
-    //@Override
+    @Override
     public int compareTo(Produto produto) {
         if (this.valorTotal < produto.valorTotal) {
             return -1;
